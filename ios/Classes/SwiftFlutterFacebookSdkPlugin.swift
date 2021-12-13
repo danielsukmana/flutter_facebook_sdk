@@ -174,10 +174,10 @@ public class SwiftFlutterFacebookSdkPlugin: NSObject, FlutterPlugin, FlutterStre
     
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         switch call.method {
-        case "initializeSDK":
-            ApplicationDelegate.shared.initializeSDK(nil)
-            result(nil)
-            return
+        // case "initializeSDK":
+        //     ApplicationDelegate.initializeSDK(nil)
+        //     result(nil)
+        //     return
         case "getPlatformVersion":
             result("iOS " + UIDevice.current.systemVersion)
         case "getDeepLinkUrl":
