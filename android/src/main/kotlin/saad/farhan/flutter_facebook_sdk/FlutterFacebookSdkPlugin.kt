@@ -38,6 +38,7 @@ class FlutterFacebookSdkPlugin : FlutterPlugin, MethodCallHandler, StreamHandler
     private lateinit var methodChannel: MethodChannel
     private lateinit var eventChannel: EventChannel
     private lateinit var logger: AppEventsLogger
+    private lateinit var context: Context
 
 
     private var deepLinkUrl: String = "Saad Farhan"
@@ -45,7 +46,6 @@ class FlutterFacebookSdkPlugin : FlutterPlugin, MethodCallHandler, StreamHandler
     private var EVENTS_CHANNEL: String = "flutter_facebook_sdk/eventChannel"
     private var queuedLinks: List<String> = emptyList()
     private var eventSink: EventSink? = null
-    private var context: Context? = null
     private var activityPluginBinding: ActivityPluginBinding? = null
 
     //  fun registerWith(registrar: Registrar) {
